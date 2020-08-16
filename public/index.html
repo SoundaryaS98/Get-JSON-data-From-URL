@@ -9,9 +9,12 @@
 </head>
 <body>
     <h2>Latest News!</h2>
+    <label for="newsURL">Add your news URL that returns JSON:</label>
+    <input type="url" id="newsURL" name="newsURL"><br><br>
     <div>
-        <button onclick="getjson()">Click here to see the latest news!</button>
+        <button onclick="getjson(document.getElementById('newsURL').value)">Click here to see the latest news!</button>
     </div>
+    <div id = "newsList"></div>
 
 </body>
 </html>
